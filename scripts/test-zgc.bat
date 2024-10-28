@@ -6,8 +6,8 @@ mkdir ..\recordings
 echo Starting application with ZGC...
 java ^
 -XX:+UseZGC ^
--Xms2g ^
--Xmx2g ^
+-Xms3g ^
+-Xmx3g ^
 -XX:+FlightRecorder ^
 -XX:StartFlightRecording=name=GCTest,duration=120s,filename=../recordings/zgc-recording.jfr ^
 -Xlog:gc*=debug:file=../logs/zgc-gc.log:time,uptime,level,tags:filecount=5,filesize=10m ^
